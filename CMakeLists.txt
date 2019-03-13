@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(asio_tutorial)
+project(boost-asio-tutorial)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -19,3 +19,7 @@ add_subdirectory(timer-2-async)
 add_subdirectory(timer-3-async-bind-handler)
 add_subdirectory(timer-4-async-member-handler)
 add_subdirectory(timer-5-async-thread-handler)
+
+add_subdirectory(daytime-1-tcp-client)
+add_subdirectory(daytime-2-tcp-server)
+add_subdirectory(daytime-3-async-tcp-server)
