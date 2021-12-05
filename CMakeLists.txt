@@ -11,6 +11,8 @@ IF(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 ENDIF(Boost_FOUND)
 
+add_definitions(-DBOOST_BIND_GLOBAL_PLACEHOLDERS)
+
 set(LINK_LIBS Threads::Threads
         boost_thread)
 
